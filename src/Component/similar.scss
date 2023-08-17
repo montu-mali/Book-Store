@@ -1,0 +1,199 @@
+.similar-product {
+  background-color: white;
+  margin-bottom: 20px;
+  border-top: 1px solid #d8d5d5;
+  // border-bottom: 5px solid #d8d5d5;
+
+  .simi-head {
+    padding: 0px 20px;
+    margin-top: 10px;
+  }
+
+  .product-box {
+    padding: 0px 20px 10px 20px;
+    overflow-x: scroll;
+    // cursor:;
+
+    .products {
+      display: flex;
+      gap: 10px;
+      padding: 10px 0 20px 0;
+
+      .product {
+        width: 180px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgb(226, 220, 220);
+        cursor: pointer;
+        box-shadow: 1px 2px 4px  gray;
+
+        .image {
+          text-align: center;
+          padding: 0px 20px;
+
+          img {
+            // width: 130px;
+            // width: 100%;
+            height: 180px;
+          }
+        }
+
+        .details {
+          .title {
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "Rajdhani", sans-serif;
+            color: black;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: flex;
+            flex-wrap: wrap;
+            overflow-wrap: break-word;
+          }
+
+          .price-box {
+            margin-top: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-weight: 600;
+            font-family: "Agdasima", sans-serif;
+            margin-bottom: 5px;
+
+            .cur-price {
+              font-size: 15px;
+            }
+
+            .total-price {
+              color: rgb(97, 95, 95);
+              text-decoration: line-through;
+              font-size: 13px;
+            }
+
+            .discount {
+              color: rgb(51, 150, 51);
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .product-box::-webkit-scrollbar{
+    
+    background-color: gray;
+    cursor: pointer;
+  }
+
+}
+
+@media (max-width: 999px) {
+  .similar-product {
+    .product-box {
+      padding: 10px 20px;
+
+      .products {
+        gap: 5px;
+
+        .product {
+          width: 160px;
+          padding: 10px;
+          border-radius: 10px;
+          border: 1px solid rgb(226, 220, 220);
+
+          .image {
+            padding: 0px 15px;
+
+            img {
+              height: 160px;
+            }
+          }
+
+          .details {
+            .title {
+              cursor: pointer;
+              font-size: 15px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .similar-product {
+    border-top: 1px solid #eeeaea;
+    border-bottom: 1px solid #eeeaea;
+
+    .simi-head {
+      padding: 0px 20px;
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+
+    .product-box {
+      padding: 10px 10px;
+
+      .products {
+        gap: 5px;
+
+        .product {
+          width: 160px;
+          padding: 10px;
+          border-radius: 8px;
+          border: 1px solid rgb(226, 220, 220);
+
+          .image {
+            padding: 0px 0px;
+
+            img {
+              height: 100px;
+              width: 80px;
+            }
+          }
+
+          .details {
+            .title {
+              cursor: pointer;
+              font-size: 12px;
+              font-weight: 600;
+              overflow-y: unset;
+              max-height: 30px;
+            }
+
+            .title::-webkit-scrollbar {
+              display: none;
+            }
+
+            .price-box {
+              gap: 1px;
+              margin-bottom: 0px;
+
+              .cur-price {
+                font-size: 13px;
+                margin-right: 4px;
+              }
+
+              .total-price {
+                color: rgb(97, 95, 95);
+                text-decoration: line-through;
+                font-size: 11px;
+              }
+
+              .discount {
+                color: rgb(51, 150, 51);
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .product-box::-webkit-scrollbar{
+    display: none;
+    }
+  }
+}

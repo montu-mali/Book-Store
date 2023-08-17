@@ -1,0 +1,50 @@
+.replacement {
+  padding: 50px 100px;
+  display: grid;
+  gap: 20px;
+  color: rgb(83, 81, 81);
+
+  .head {
+    font-weight: 30;
+    font-family: "Ysabeau SC", sans-serif;
+    color: black;
+  }
+  .first-box {
+    .hold-line {
+      color: black;
+      font-weight: 600;
+      margin: 10px 0px;
+    }
+    p {
+      padding: 3px 0;
+      margin: 0;
+    }
+    ul {
+      margin: 5px 0;
+      li {
+        gap: 3px;
+      }
+    }
+    .ul-number {
+      list-style: decimal;
+    }
+    .last-big {
+      color: black;
+      font-weight: 600;
+    }
+  }
+}
+@media (max-width: 999px) {
+  .replacement {
+    padding: 55px 40px;
+  }
+}
+@media (max-width: 500px) {
+  .replacement {
+    padding: 45px 20px;
+    gap: 10;
+    .head {
+      font-size: 12px;
+    }
+  }
+}

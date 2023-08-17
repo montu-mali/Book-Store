@@ -1,0 +1,95 @@
+$fontC: "Ysabeau SC", sans-serif;
+
+.privacy {
+  z-index: 0;
+  height: 100%;
+  padding: 50px 100px;
+  background-color: white;
+
+  .head {
+    h1 {
+      font-family: "Ysabeau Office", sans-serif;
+      font-weight: 500;
+    }
+  }
+
+  .privacy-box {
+    font-family: $fontC;
+    font-size: 20px;
+    font-weight: 500;
+
+    .commite {
+      p {
+      }
+
+      p::first-letter {
+        width: 700;
+        font-size: 25px;
+      }
+    }
+
+    ul {
+      display: grid;
+      gap: 10px;
+    }
+  }
+
+  .info-box {
+    font-family: $fontC;
+    font-size: 20px;
+    font-weight: 500;
+
+    .info-geth {
+      font-size: 20;
+      font-weight: 600;
+    }
+
+    ul {
+      display: grid;
+      gap: 10px;
+    }
+  }
+
+  .security-box {
+    font-family: $fontC;
+    font-size: 20px;
+    font-weight: 500;
+
+    h2 {
+      height: 20px;
+    }
+
+    p {
+    }
+  }
+}
+@media (max-width: 999px) {
+  .privacy {
+    height: 100%;
+    padding: 50px 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .privacy {
+    height: 100%;
+    padding: 50px 25px;
+
+    .privacy-box {
+      font-family: $fontC;
+      font-weight: 500;
+    }
+    .info-box {
+      font-size: 20px;
+    }
+    .security-box {
+      font-size: 19px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .privacy {
+    height: 100%;
+    padding: 40px 20px;
+  }
+}

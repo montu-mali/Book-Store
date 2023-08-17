@@ -1,0 +1,46 @@
+.review-rating {
+ 
+
+  .no-review {
+    display: grid;
+    place-content: center;
+    margin-top: 15%;
+    text-align: center;
+
+    figure {
+      img {
+      }
+    }
+
+    h2 {
+    }
+
+    p {
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .review-rating {
+    margin-top: 30%;
+    padding: 10px;
+    margin-top: 40%;
+
+    .no-review {
+      text-align: center;
+
+      figure {
+        img {
+          width: 80%;
+        }
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+      }
+    }
+  }
+}

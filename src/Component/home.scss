@@ -1,0 +1,58 @@
+.slides {
+  box-sizing: border-box;
+  background-color: white;
+  position: relative;
+  padding-top: 70px;
+  .carousel .thumbs-wrapper {
+    margin: 02px;
+  }
+
+  .heroslider {
+    //  position: relative;
+
+    .slide {
+      position: relative;
+      height: 50vh;
+    }
+
+    .image {
+      height: 100%;
+      width: 100%;
+      text-align: center;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit:fill;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .slides {
+    z-index: 0;
+
+    .heroslider {
+      padding: 0;
+      max-height: fit-content;
+
+      .slide {
+        height: 40vh;
+      }
+
+      .image {
+        width: 100%;
+        height: 100%;
+    
+
+        img {
+          height: 100%;
+          width: 100%;
+          text-align: center;
+          object-fit:fill;
+        }
+      }
+    }
+  }
+}

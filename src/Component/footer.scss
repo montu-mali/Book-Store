@@ -1,0 +1,221 @@
+.footer {
+  padding: 0px 40px;
+  background-color: rgba(0, 0, 0, 0.932);
+  color: white;
+
+  .footer-box {
+    .help {
+      .help-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: start;
+        padding: 30px 0px;
+
+        .three-box {
+          padding-left: 10px;
+
+          .head {
+            margin-bottom: 8px;
+            font-size: 20px;
+          }
+
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 5px;
+
+            li {
+              margin: 0;
+
+              .link {
+                text-decoration: none;
+                color: rgb(219, 216, 216);
+                font-weight: 600;
+              }
+
+              .link:hover {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+
+      .contect {
+        border-top: 1px solid rgb(82, 80, 80);
+
+        .contect-box {
+          text-align: center;
+          padding: 30px 0px;
+
+          ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+            li {
+              .icon {
+                font-size: 30px;
+                border-radius: 50%;
+                color: rgb(240, 236, 236);
+              }
+
+              // .facebook {
+              //     color:white;
+              //     background-color: blue;
+              // }
+
+              // .insta {
+              //     background-color: rgb(230, 81, 28);
+              //     color: white;
+              // }
+
+              // .twiter {
+              //     color: rgb(1, 117, 212);
+              //     // color: white;
+              //     background-color: white;
+              // }
+
+              // .linked {
+              //     color: blue;
+              //     background-color: white;
+              // }
+
+              // .youtube {
+              //     color: white;
+              //     background-color: red;
+              // }
+            }
+          }
+        }
+      }
+
+      .copy-right {
+        border-top: 1px solid rgb(211, 102, 12);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 20px;
+        row-gap: 10px;
+
+        .copy {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  .footer {
+    padding: 0px 20px;
+
+    .footer-box {
+      .help {
+        .help-box {
+          padding: 30px 0px;
+
+          .three-box {
+            padding-left: 40px;
+
+            .head {
+              margin-bottom: 8px;
+              font-size: 20px;
+            }
+          }
+        }
+
+        .contect {
+          .contect-box {
+            padding: 10px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .footer {
+    padding: 0px 10px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 530px) {
+  .footer {
+    padding: 0px 05px;
+    padding-bottom: 50px;
+
+    .footer-box {
+      .help {
+        .help-box {
+          padding: 30px 0px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: start;
+
+          .three-box {
+            padding: 0px 20px;
+
+            .head {
+              margin-bottom: 8px;
+              font-size: 20px;
+            }
+
+            ul {
+              li {
+                .link {
+                  text-decoration: none;
+                  color: rgb(219, 216, 216);
+                  font-weight: 400;
+                  font-size: 15px;
+                }
+
+                .link:hover {
+                  color: red;
+                }
+              }
+            }
+          }
+        }
+
+        .contect {
+          .contect-box {
+            padding: 0px 0px;
+          }
+        }
+
+        .copy-right {
+          font-size: 13px;
+
+          .copy {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 399px) {
+  .footer {
+    padding: 0px 10px;
+    padding-bottom: 50px;
+
+    .footer-box {
+      .help {
+        .help-box {
+          padding: 30px 0px;
+
+          .three-box {
+            padding: 0px 20px;
+          }
+        }
+      }
+    }
+  }
+}

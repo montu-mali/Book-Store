@@ -1,0 +1,316 @@
+.address {
+  box-sizing: border-box;
+  padding: 20px 30px 20px 20px;
+  // display: grid;
+  // gap: 20px;
+
+  .address-box {
+    .head {
+      h3 {}
+    }
+
+    .add-save {
+      .add-address {
+        .add-new {
+          border: 1px solid gray;
+          background-color: rgba(247, 247, 247, 0.705);
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 1px 2px 4px  gray;
+
+          .new {
+            cursor: pointer;
+            color: rgb(17, 90, 226);
+            display: flex;
+            gap: 5px;
+            font-weight: 600;
+            
+
+            .icon-box {
+              .icon {
+                font-weight: 700;
+              }
+            }
+
+            span {}
+          }
+
+          .add {
+            display: grid;
+            gap: 15px;
+
+            span {
+              color: rgb(55, 55, 245);
+              font-weight: 700;
+              margin-bottom: 10px;
+            }
+
+            form {
+              display: grid;
+              gap: 20px;
+
+              .two-box {
+                display: flex;
+                gap: 20px;
+
+                .box-12 {
+                  overflow: hidden;
+                  width: 100%;
+                  display: grid;
+                  gap: 2px;
+                  border: 1px solid black;
+                  padding: 5px 10px;
+                  background-color: white;
+                  box-shadow: 1px 2px 4px  gray;
+
+                  label {
+                    font-size: 11px;
+                  }
+
+                  input {
+                    // width: 100%;
+                    border: none;
+                    outline: none;
+                    font-size: 15px;
+                    background-color: white;
+                    font-weight: 600;
+                    
+                  }
+                }
+              }
+
+              .area-box {
+                background-color: white;
+                display: grid;
+                gap: 2px;
+                border: 1px solid black;
+                padding: 5px 10px;
+                border-radius: 5px;
+                display: grid;
+                box-shadow: 1px 2px 4px  gray;
+
+                label {
+                  font-size: 11px;
+                }
+
+                input {
+                  border: none;
+                  outline: none;
+                  font-size: 15px;
+                  height: 30px;
+                }
+              }
+
+              .two-button {
+                display: flex;
+                justify-content: space-evenly;
+
+                button {
+                  cursor: pointer;
+                  padding: 10px 70px;
+                  font-size: 16px;
+                  font-weight: 600;
+                  border-radius: 5px;
+                }
+
+                .save {
+                  // border: 1px solid rgb(25, 55, 156);
+                  border: 1PX solid gray;
+                  background-color: rgb(67, 106, 235);
+                  color: white;
+                  box-shadow: 2px 2px 4px gray;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  padding: 10px 70px;
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+                .save:hover {
+                  background-color: green;
+                  color: white;
+                  border: 1PX solid white;
+                  box-shadow: 2px 2px 4px  green;
+                }
+
+               
+
+                .cancel {
+                  border: none;
+                  color: rgb(25, 55, 156);
+                  background-color: white;
+                }
+                .cancel:hover{
+                  color: red;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .save-address {
+        margin-top: 30px;
+
+        .all-address {
+          border: 1px solid gray;
+          border-radius: 5px;
+          box-shadow: 1px 2px 4px  gray;
+
+          .address {
+            border-bottom: 1px solid gray;
+            display: grid;
+            gap: 5px;
+
+            .name-twoButton {
+              display: flex;
+              justify-content: space-between;
+              overflow: hidden;
+
+              .name {
+                overflow: hidden;
+                font-weight: 600;
+              }
+
+              .two-button {
+                display: flex;
+                gap: 5px;
+
+                button {
+                  cursor: pointer;
+                  border: none;
+                  background-color: white;
+                }
+
+                .edit {
+                  border: none;
+                  color: blue;
+                }
+
+                .remove {
+                  color: red;
+
+                }
+              }
+            }
+
+            .locality-box {}
+
+            .number-box {
+              .number {
+                font-weight: 600;
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  .address {
+    .address-box {
+      .add-save {
+        .add-address {
+          .add-new {
+            position: relative;
+            padding: 20px 20px;
+
+            .add {
+              form {
+                .two-box {
+                  display: grid;
+
+                  .box-12 {
+                    width: 100%;
+                    padding: 0;
+                    overflow: hidden;
+
+                    label {
+                      padding: 5px 10px;
+                    }
+
+                    input {
+                      padding: 5px 10px;
+                      width: 100%;
+                      border-radius: 5px;
+                    }
+                  }
+                }
+
+                .two-button {
+                  display: flex;
+                  justify-content: space-evenly;
+
+                  button {
+                    cursor: pointer;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    border-radius: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .address {
+    box-sizing: border-box;
+    padding: 20px 20px;
+
+    .address-box {
+      .add-save {
+        .add-address {
+          .add-new {
+            position: relative;
+            padding: 20px 10px;
+
+            .add {
+              form {
+                .two-box {
+                  display: grid;
+                  padding: 0px;
+
+                  .box-12 {
+                    width: 100%;
+                    padding: 0;
+                    overflow: hidden;
+
+                    label {
+                      padding: 5px 10px;
+                    }
+
+                    input {
+                      padding: 5px 10px;
+                      width: 100%;
+                    }
+                  }
+                }
+
+                .two-button {
+                  display: flex;
+                  justify-content: space-evenly;
+
+                  button {
+                    cursor: pointer;
+                    padding: 8px 10px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    border-radius: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

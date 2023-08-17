@@ -1,0 +1,167 @@
+.wish-list {
+  .save-list {
+    .header {
+      h3 {
+        // font-family: 'Ysabeau SC', sans-serif;
+        font-weight: 600;
+
+      }
+    }
+
+    .wish-book {
+      .book-delet {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+        border-top: 1px solid rgb(209, 206, 206);
+
+        .book {
+          display: flex;
+          gap: 20PX;
+          cursor: pointer;
+
+          .image {
+            width: 80px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .detail {
+            display: grid;
+
+            .title {
+              .head {
+                font-size: 17px;
+                font-weight: 600;
+              }
+            }
+
+            .price {
+              display: flex;
+              gap: 5px;
+              flex-wrap: wrap;
+
+              .cur-price {
+                font-size: 18px;
+                font-weight: 600;
+              }
+
+              .total-price {
+                color: gray;
+                text-decoration: line-through;
+                font-size: 15px;
+                font-weight: 600;
+              }
+
+              .discount {
+                font-size: 17px;
+                font-weight: 600;
+                color: green;
+              }
+            }
+          }
+        }
+
+        .delet {
+          .delet-icon {
+            cursor: pointer;
+            color: gray;
+          }
+
+          .delet-icon:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+  .empty-list {
+    display: grid;
+    place-content: center;
+    margin-top: 10%;
+    text-align: center;
+
+    figure {
+      img {}
+    }
+
+    h2 {}
+
+    p {}
+  }
+}
+
+@media (max-width: 450px) {
+  .wish-list {
+    padding: 10px;
+
+    .save-list {
+      .wish-book {
+        .book-delet {
+          padding: 20px 10px 20px 20px;
+
+          .book {
+            gap: 20PX;
+
+            .image {
+              width: 60px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            .detail {
+              display: grid;
+              gap: 10px;
+
+              .title {
+                .head {
+                  font-size: 15px;
+                  color: gray;
+                }
+              }
+
+              .price {
+                gap: 5px;
+
+                .cur-price {
+                  font-size: 15px;
+                }
+
+                .total-price {
+                  font-size: 13px;
+                }
+
+                .discount {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .empty-list {
+
+        margin-top: 10%;
+        text-align: center;
+
+        figure {
+          img {
+            width: 70%;
+          }
+
+          h2 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,369 @@
+nav {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 3;
+  background-color: white;
+  width: 100%;
+  border-bottom: 1px solid gray;
+
+  .navbar {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .header {
+      display: grid;
+      place-content: center;
+
+      img {
+        width: 100%;
+        margin-left: -10px;
+      }
+    }
+
+    .tools {
+      display: flex;
+      gap: 20px;
+
+      ul {
+        display: flex;
+        gap: 25px;
+        list-style-type: none;
+
+        .link {
+          cursor: pointer;
+          text-decoration: none;
+          color: black;
+         
+          li {
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .close-tools {
+      display: none;
+    }
+
+    .nav-tools {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      z-index: 100;
+      background-color: rgb(228, 206, 206);
+      height: 100vh;
+       animation: width 0.25s ease-out forwards alternate;
+
+
+      .tool-head {
+        padding: 17px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(82, 79, 79);
+        font-size: 20px;
+        font-weight: 600;
+
+        .cross {
+          cursor: pointer;
+        }
+      }
+
+      .list {
+        z-index: 1000;
+        position: relative;
+        list-style: none;
+        padding: 0px 20px;
+        overflow-y: scroll;
+
+        .link {
+          cursor: pointer;
+          text-decoration: none;
+          color: black;
+          width: 100%;
+
+          li {
+            font-family: "Ysabeau SC", sans-serif;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            width: 100%;
+          }
+        }
+      }
+
+      .list::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    @keyframes width {
+      from{
+        width: 0px;
+      }
+      to{
+        width: 31%;
+        max-width: 400px;
+        min-width: 200px;
+      }
+    }
+
+    .menu {
+      cursor: pointer;
+      display: grid;
+      place-content: center;
+
+      .icon {
+        font-size: 27px;
+      }
+    }
+
+    .search {
+      display: none;
+    }
+
+    .icons {
+      ul {
+        display: flex;
+        list-style-type: none;
+        gap: 25px;
+
+        li {
+          text-decoration: none;
+          position: relative;
+
+          span.count {
+            position: absolute;
+            background-color:rgb(223, 223, 4);
+            border-radius: 50%;
+            top: -10px;
+            right: 0;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-weight: 600;
+            pointer-events: none;
+            font-size: 15px;
+          }
+
+          .icon {
+            font-size: 27px;
+          }
+
+          .link {
+            color: black;
+          }
+
+          .iconss {
+            color: rgb(155, 128, 9);
+          }
+        }
+
+        .home {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1160px) {
+    .navbar {
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      height: 63px;
+
+      .header {
+        position: absolute;
+        left: 48%;
+
+        img {
+          display: grid;
+          place-content: center;
+          width: 100%;
+          margin-top: 5px;
+        }
+      }
+
+      .tools {
+        display: flex;
+        gap: 20px;
+
+        .tool {
+          display: none;
+        }
+      }
+
+      .nav-tools {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 40%;
+        max-width: 350px;
+
+        .tool-head {
+          font-size: 20px;
+          font-weight: 600;
+
+          .cross {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .menu {
+        display: grid;
+        place-content: center;
+      }
+
+      .search {
+        display: none;
+      }
+
+      .icons {
+        .list {
+          display: flex;
+          list-style-type: none;
+          gap: 25px;
+
+          li {
+            text-decoration: none;
+            font-size: 30px;
+          }
+
+          .home {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 699px) {
+    .navbar {
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      height: fit-content;
+      // gap: 10px;
+
+      .header {
+        position: absolute;
+        left: 45%;
+        top: 0px;
+        height: fit-content;
+
+        img {
+          display: grid;
+          place-content: center;
+          width: 80%;
+        }
+      }
+
+      .tools {
+        display: flex;
+        gap: 20px;
+
+        .tool {
+          display: none;
+        }
+      }
+
+      .nav-tools {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        z-index: 100;
+        animation: width 0.2s ease-out forwards alternate;
+      
+
+        .tool-head {
+          padding: 10.5px 15px;
+          font-size: 19px;
+          font-weight: 600;
+          .cross {
+            cursor: pointer;
+          }
+        }
+
+        .list {
+          li {
+            font-family: "Ysabeau SC", sans-serif;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 500;
+          }
+        }
+      }
+      @keyframes width {
+        from {
+          width: 0px;
+        }
+  
+        to {
+        width: 31%;
+        max-width: 400px;
+        min-width: 204px;
+        }
+      }
+
+      .menu {
+        display: grid;
+        place-content: center;
+      }
+
+      .search {
+        display: block;
+        width: fit-content;
+        position: relative;
+
+        .s-icon {
+          font-size: 30px;
+          color: rgb(155, 128, 9);
+          display: grid;
+          place-content: center;
+        }
+      }
+
+      .icons {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: rgb(245, 239, 239);
+        z-index: 3;
+        border-radius: 20px 20px 0 0;
+
+        ul {
+          padding: 7px 20px;
+          margin: 0px;
+          display: flex;
+          gap: 0px;
+          list-style-type: none;
+          justify-content: space-evenly;
+
+          li {
+            text-decoration: none;
+          }
+
+          .home {
+            display: block;
+            background-color: rgb(245, 239, 239);
+          }
+
+          .searchs {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

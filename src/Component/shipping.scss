@@ -1,0 +1,39 @@
+.shipping {
+  padding: 50px 100px;
+  display: grid;
+  gap: 20px;
+  color: rgb(49, 48, 48);
+
+  .head {
+    font-weight: 30;
+    font-family: "Ysabeau SC", sans-serif;
+    color: black;
+  }
+
+  .shipping-time {
+    p {
+      span {
+        font-weight: 600;
+        color: black;
+      }
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  .shipping {
+    padding: 50px 40px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .shipping {
+    padding: 40px 20px;
+    gap: 10px;
+
+    .head {
+      font-size: 14px;
+    }
+  }
+}

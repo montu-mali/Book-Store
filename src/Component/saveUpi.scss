@@ -1,0 +1,60 @@
+.main-box {
+  display: grid;
+  gap: 10px;
+  padding: 0px 30px;
+
+  .head {
+    h3 {
+      font-weight: 600;
+    }
+  }
+
+  .faqs {
+    .head {
+      h3 {
+        font-family: "Ysabeau SC", sans-serif;
+      }
+    }
+
+    .faqs-detail {
+      .que {
+        // font-size: 17px;
+        font-weight: 600;
+        color: black;
+      }
+
+      .ans {
+        margin-top: 0px;
+        margin-bottom: 20px;
+      }
+      .small-tx {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .main-box {
+    display: grid;
+    gap: 10px;
+    padding: 0px 15px;
+  }
+}
+
+@media (max-width: 699px) {
+  .main-box {
+    display: grid;
+    gap: 10px;
+    padding: 0px 50px;
+  }
+}
+@media (max-width: 450px) {
+  .main-box {
+    display: grid;
+    gap: 10px;
+    padding: 0px 15px;
+  }
+}

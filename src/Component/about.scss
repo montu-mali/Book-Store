@@ -1,0 +1,59 @@
+.about {
+  padding: 50px 100px;
+  display: grid;
+  gap: 35px;
+  color: rgb(83, 81, 81);
+
+  .bold {
+    color: black;
+    font-weight: 600;
+  }
+  .head {
+    font-weight: 30;
+    font-family: "Ysabeau SC", sans-serif;
+    color: black;
+    max-height: 40px;
+  }
+
+  .welcome {
+    h2 {
+      font-weight: 400;
+      color: black;
+      max-height: 10px;
+    }
+  }
+
+  .three-pare {
+    display: grid;
+    gap: 7px;
+    p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .four-hase {
+    display: grid;
+    gap: 7px;
+  }
+
+  .four-star {
+    display: grid;
+    gap: 7px;
+  }
+
+  .contact {
+    display: grid;
+    gap: 7px;
+  }
+}
+@media (max-width: 999px) {
+  .about {
+    padding: 50px 40px;
+  }
+}
+@media (max-width: 500px) {
+  .about {
+    padding: 40px 20px;
+  }
+}
