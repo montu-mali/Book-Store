@@ -32,8 +32,6 @@ const Address = () => {
     });
   };
 
-  console.log(address)
-
   const formSubmit = (e: any) => {
     e.preventDefault()
     addAddress(addressDtl)
@@ -68,14 +66,8 @@ const Address = () => {
       landmark: "",
       altermateNo: "",
     });
-
-    // if(name){
-    //   addAddress(addressDtl)
-    // }
-    // // 
   };
 
-  // const localAddData = localStorage.getItem("formName");
 
   return (
     <>

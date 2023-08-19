@@ -64,10 +64,6 @@ const Navbar = () => {
     addedItems(JSON.parse(localStorage.getItem("saveWishItems") as any) || [])
   }, []);
 
-  console.log((JSON.parse(localStorage.getItem("saveWishItems") as any) || []))
-  console.log((JSON.parse(localStorage.getItem("cartItems") as any) || []))
-
-
   return (
     <>
       <nav>
