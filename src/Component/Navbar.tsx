@@ -124,9 +124,6 @@ const Navbar = () => {
               <Link className="link" to="/cart">
                 <li className="">Cart</li>
               </Link>
-              <Link className="link" to="">
-                <li className="">Wishlist</li>
-              </Link>
               <Link className="link" to="/contact">
                 <li className="">Contact Us</li>
               </Link>

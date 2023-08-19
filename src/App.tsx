@@ -24,6 +24,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" Component={Home} />
+        <Route path="*" Component={Home} />
         <Route path="/search" Component={Search} />
         <Route path="/details" Component={Details} />
         <Route path="/cart" Component={Cart} />
