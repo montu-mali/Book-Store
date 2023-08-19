@@ -234,10 +234,10 @@ const Address = () => {
                                 </div>
                               </div>
                               <div className="locality-box">
-                                <span>{e.houseNo}</span>, {e.locality}, {e.city},{e.state}-{e.pincode}
+                                <span>{e.houseNo},</span> {e.locality}, {e.landmark?e.landmark+",":""} {e.city},{e.state}-{e.pincode}
                               </div>
                               <div className="number-box">
-                                <span className="number">{e.number}</span>
+                                <span className="number">{e.number}</span> <span className="alt-number"> {e.altermateNo}</span>
                               </div>
                             </div>
                           </>

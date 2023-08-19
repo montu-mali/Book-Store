@@ -88,6 +88,7 @@
                 border-radius: 5px;
                 display: grid;
                 box-shadow: 1px 2px 4px  gray;
+               
 
                 label {
                   font-size: 11px;
@@ -98,6 +99,7 @@
                   outline: none;
                   font-size: 15px;
                   height: 30px;
+                  font-weight: 600;
                 }
               }
 
@@ -199,6 +201,10 @@
               .number {
                 font-weight: 600;
                 color: black;
+              }
+              .alt-number{
+                font-weight: 600;
+                color: gray;
               }
             }
           }
